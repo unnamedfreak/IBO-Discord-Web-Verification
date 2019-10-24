@@ -1,0 +1,177 @@
+body {
+    background-image: url("https://cdn.discordapp.com/banners/230296179991248896/751a600933613b111698f6a424327455.jpg?size=1024");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    user-select: none;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+.switch {
+    float: right;
+}
+
+h1, #title {
+    display: table;
+    margin: auto;
+    font-size: 5vw;
+    font-weight: 600;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+h1, #title-light {
+    color: black;
+}
+
+#overlay {
+    background-color: rgba(51, 53, 57, 0.85);
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#overlay-light {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#content {
+    color: #dcddde;
+    padding: 3%;
+    line-height: 175%;
+    font-size: 1em;
+    overflow: scroll;
+}
+
+#content-light {
+    color: #2e3338;
+}
+
+#check {
+    cursor: pointer;
+}
+
+
+/* Tried making the checkbox look fancy, failed smh
+
+input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+}
+input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #8e9297;
+    background-color: white;
+    border-radius: 1px;
+    width: 16px;
+    height: 16px;
+}
+input[type="checkbox"]:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #8e9297;
+    background-color: #67db86;
+    border-radius: 1px;
+    width: 16px;
+    height: 16px;
+} */
+
+.ping {
+    color: #7289da;
+    background-color: rgba(114,137,218,.1);
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    cursor: pointer;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.ping-light {
+    background-color: #f1f3fb;
+}
+
+.ping:hover {
+    color: white;
+    background-color: rgba(114,137,218,.7);
+}
+
+#warning {
+    display: none;
+    color: #f04747;
+}
+
+.button {
+    display: table;
+    background-color: #f04747;
+    /* background-color: #43b581; */
+    border: none;
+    border-radius: 5px;
+    font-size: 150%;
+    padding: 1%;
+    width: 100%;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.button#verify {
+    display: none;
+    background-color: #7289da;
+}
+
+
+@media only screen and (max-width: 3600px) {
+    #content {
+        font-size: 300%;
+    }
+}
+
+@media only screen and (max-width: 2400px) {
+    #content {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #content {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1, #title {
+        font-size: 6vw;
+    }
+
+    #content {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1, #title {
+        font-size: 7.5vw;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1, #title {
+        font-size: 7vw;
+    }
+}

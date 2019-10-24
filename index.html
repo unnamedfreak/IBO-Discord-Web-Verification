@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>r/IBO Discord Server</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="overlay">
+            <div id="content">
+            <h1 id="title">r/IBO Discord Server</h1>
+                <h2>Online Verification System</h2>
+                <hr>
+                <div id="rules" class="info">
+                            <h2>Rules</h2>
+                            <ol>
+                                <li>Be polite & respectful at all times in accordance with the <a href="https://discordapp.com/guidelines" target="_blank">Discord Community Guidelines</a>.</li>
+                                <li>The posting of, or encouraging others to post, content forbidden under <a href="https://support.discordapp.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct" target="_blank">Discord’s Code of Conduct for partnered servers</a> is prohibited.</li>
+                                <li>Academic dishonesty is strictly prohibited.</li>
+                                <li>Do not tag the entire staff team (<span class="ping">@Staff</span>) unless there is an urgent situation requiring an immediate response.</li>
+                                <li>‘Backseat moderating’ (attempting to assume the authority of a staff member) beyond gently reminding other users of the rules as-written is not permitted.</li>
+                                <li>Stay on topic in the channel you are in.</li>
+                                <li>Wait at least 15 minutes after asking an academic question before tagging the subject helpers in that subject’s channel.</li>
+                                <li>You must ask for staff permission before advertising anything.</li>
+                                <li>You must have a username/nickname that can be mentioned by typing it with a typical English keyboard.</li>
+                            </ol>
+                            <hr>
+                            <label id="check"><input type="checkbox" id="box">I agree to the server rules.</label>
+                            <p id="warning">⚠️ You did not agree to the server rules!</p>
+                            <button class="button" id="next">Next</button>
+                </div>
+                <div id="faq" class="info" hidden>
+                            <h2>FAQ</h2>
+                            <p><u>How does it work?</u> Once you have selected your year role and agreed to our rules, you can log in using Discord. Discord will then send us your user ID, and we will give you the respective roles, unlocking access to the server.</p>
+                
+                            <p><u>Is my data safe?</u> Yes. We never receive your email or password, nor do we store your IP address. Discord sends us your user ID, which is not stored anywhere.</p>
+                
+                            <p><u>I need help!</u> If you are having issues please send a DM to <a href="https://discordapp.com/channels/@me/466271091686375424" style="text-decoration: none;" target="_blank"><span class="ping">@Mod-Mail</span></a>. A memeber of staff will get back to you ASAP.</p>
+                            <hr>
+                            <h2>What year role should we give you?</h2>
+                            <select name="role" id="year-role">
+                                <option value="__select">Please Select...</option>
+                                <option value="November 2019">I take my exams in November 2019</option>
+                                <option value="May 2020">I take my exams in May 2020</option>
+                                <option value="November 2020">I take my exams in November 2020</option>
+                                <option value="May 2021">I take my exams in May 2021</option>
+                                <option value="Alumni">I am an IB Graduate</option>
+                                <option value="Not IB">I do not/did not take IB</option>
+                            </select>
+            
+                            <p>This is the role that best describes you in regards to the IB. This can be changed at a later point in time.</p>
+            
+                            <button class="button" id="verify">Verify using Discord</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
