@@ -40,7 +40,7 @@ h1, #title-light {
     margin-left: 7.5%;
     margin-right: 7.5%;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #overlay-light {
