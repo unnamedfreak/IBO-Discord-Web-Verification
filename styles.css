@@ -12,7 +12,7 @@ a {
     color: white;
 }
 
-a {
+a#light {
     text-decoration: underline;
     color: black;
 }
