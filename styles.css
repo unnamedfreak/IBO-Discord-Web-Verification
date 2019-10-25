@@ -12,6 +12,10 @@ a {
     color: #00b0f4;
 }
 
+button, button:active, button:focus, button:active:focus, button:visited {
+    outline: none;
+}
+
 .switch {
     float: right;
 }
