@@ -9,12 +9,7 @@ body {
 
 a {
     text-decoration: underline;
-    color: white;
-}
-
-a#light {
-    text-decoration: underline;
-    color: black;
+    color: #00b0f4;
 }
 
 .switch {
@@ -31,8 +26,8 @@ h1, #title {
     margin-bottom: 5%;
 }
 
-h1, #title-light {
-    color: black;
+.sub-heading {
+    display: inline-block;
 }
 
 #overlay {
@@ -43,20 +38,12 @@ h1, #title-light {
     overflow: scroll;
 }
 
-#overlay-light {
-    background-color: rgba(0, 0, 0, 0.85);
-}
-
 #content {
     color: #dcddde;
     padding: 3%;
     line-height: 175%;
     font-size: 1em;
     overflow: scroll;
-}
-
-#content-light {
-    color: #2e3338;
 }
 
 #check {
@@ -100,16 +87,12 @@ input[type="checkbox"]:checked:after {
     text-decoration: none;
 }
 
-.ping-light {
-    background-color: #f1f3fb;
-}
-
 .ping:hover {
     color: white;
     background-color: rgba(114,137,218,.7);
 }
 
-#warning {
+.warning {
     display: none;
     color: #f04747;
 }
@@ -127,14 +110,68 @@ input[type="checkbox"]:checked:after {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    transition: 0.3s ease;
+    transition: 0.35s ease;
 }
 
 .button#verify {
-    display: none;
-    background-color: #7289da;
+    /* display: none; */
+    background-color: #a4b1de;
 }
 
+.themeSwitch {
+    margin-top: 20px;
+    float: right;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    transition: 0ms;
+    background-image: url("/assets/moon.svg");
+    background-size: contain;
+}
+
+.themeSwitch:hover {
+    background-color: #dbdbdb;
+}
+
+.themeSwitch:active {
+    background-color: #bbbbbb;
+}
+
+.btnImg {
+    width: 15px;
+    height: 15px;
+    margin-left: -1.5px;
+    margin-top: 2px;
+}
+
+
+.light h1, .light #title, .light #content{
+    color: #2e3338;
+}
+.light a {
+    color: #0067e0;
+}
+.light #ping {
+    background-color: #f1f3fb;
+}
+.light #overlay {
+    /* background-color: rgba(227, 229, 232, 0.85); */
+    background-color: rgba(242, 243, 245, 0.85);
+}
+.light hr {
+    background-color: #7289da;
+}
+.light .themeSwitch {
+    background-image: url("/assets/sun.svg");
+    background-color: #333539;
+}
+.light .themeSwitch:hover {
+    background-color: #35373b;
+}
+.light .themeSwitch:active {
+    background-color: #252629;
+}
 
 @media only screen and (max-width: 3600px) {
     #content {

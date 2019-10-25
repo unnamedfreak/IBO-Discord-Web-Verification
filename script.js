@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#check input[type="checkbox"]').click( () => {
         if($('#check input[type="checkbox"]').prop('checked') == true) {
             $('#next').css('background-color', '#43b581');
-            $('#warning').hide(500);
+            $('#ruleWarn').hide(500);
         } else {
             $('#next').css('background-color', '#f04747');
         }
@@ -13,25 +13,41 @@ $(document).ready(function() {
     $('#next').click( (e) => { 
         e.preventDefault();
         if($('#check input[type="checkbox"]').prop('checked') == false) {
-            $('#warning').show(500);
+            $('#ruleWarn').show(500);
         } else {
-            $('#warning').hide(500);
+            $('#ruleWarn').hide(500);
             $('#rules').hide(500);
             $('#faq').show(500);
         }
     });
 
-    $('#year-role').click( () => {
-        console.log($('#year-role').val())
-    })
-
     $('#year-role').change((e) => { 
         e.preventDefault();
         if($('#year-role').val() != '__select') {
-            $('#verify').show();
+            $('#verify').css("background-color", "#7289da");
+            $('#verify').attr("disabled", false);
+            // $('#yearWarn').hide(500);
         } else {
-            $('#verify').hide();
+            $('#verify').css("background-color", "#a4b1de");
+            $('#verify').attr("disabled", true);
         }  
+    })
+
+    //Doesn't work cause I disbaled the button :)
+    // $('#verify').click(() => {
+    //     if($('#year-role').val() == '__select') {
+    //         $('#yearWarn').show(500);
+    //     }
+    // })
+
+    $('button.themeSwitch').click((e) => {
+        e.preventDefault();
+        if($('body').hasClass('light') == false) {
+            $('body').addClass('light');
+        } else {
+            $('body').removeClass('light');
+        }
+
     })
 
 });

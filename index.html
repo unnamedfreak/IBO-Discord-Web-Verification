@@ -9,14 +9,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </head>
-    <body>
+    <body class="">
         <div id="overlay">
             <div id="content">
             <h1 id="title">r/IBO Discord Server</h1>
                 <h2>Online Verification System</h2>
                 <hr>
                 <div id="rules" class="info">
-                            <h2>Rules</h2>
+                    <div>
+                        <h2 class="sub-heading">Rules</h2>
+                        <button class="themeSwitch"></button>
+                    </div>
                             <ol>
                                 <li>Be polite & respectful at all times in accordance with the <a href="https://discordapp.com/guidelines" target="_blank">Discord Community Guidelines</a>.</li>
                                 <li>The posting of, or encouraging others to post, content forbidden under <a href="https://support.discordapp.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct" target="_blank">Discord’s Code of Conduct for partnered servers</a> is prohibited.</li>
@@ -30,11 +33,14 @@
                             </ol>
                             <hr>
                             <label id="check"><input type="checkbox" id="box">I agree to the server rules.</label>
-                            <p id="warning">⚠️ You did not agree to the server rules!</p>
+                            <p class="warning" id="ruleWarn">⚠️ You did not agree to the server rules!</p>
                             <button class="button" id="next">Next</button>
                 </div>
                 <div id="faq" class="info" hidden>
-                            <h2>FAQ</h2>
+                    <div>
+                        <h2 class="sub-heading">FAQ</h2>
+                        <button class="themeSwitch"></button>
+                    </div>
                             <p><u>How does it work?</u> Once you have selected your year role and agreed to our rules, you can log in using Discord. Discord will then send us your user ID, and we will give you the respective roles, unlocking access to the server.</p>
                 
                             <p><u>Is my data safe?</u> Yes. We never receive your email or password, nor do we store your IP address. Discord sends us your user ID, which is not stored anywhere.</p>
@@ -52,9 +58,10 @@
                                 <option value="Not IB">I do not/did not take IB</option>
                             </select>
             
+                            <p class="warning" id="yearWarn">⚠️ You did not select the year role!</p>
                             <p>This is the role that best describes you in regards to the IB. This can be changed at a later point in time.</p>
             
-                            <button class="button" id="verify">Verify using Discord</button>
+                            <button class="button" id="verify" disabled="true">Verify using Discord</button>
                 </div>
             </div>
         </div>
