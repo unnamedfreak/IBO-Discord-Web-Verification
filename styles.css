@@ -130,7 +130,7 @@ input[type="checkbox"]:checked:after {
     height: 24px;
     border: none;
     transition: 0ms;
-    background-image: url("/assets/moon.svg");
+    background-image: url("/IBO-Discord-Web-Verification/assets/moon.svg");
     background-size: contain;
 }
 
@@ -167,7 +167,7 @@ input[type="checkbox"]:checked:after {
     background-color: #7289da;
 }
 .light .themeSwitch {
-    background-image: url("/assets/sun.svg");
+    background-image: url("/IBO-Discord-Web-Verification/assets/sun.svg");
     background-color: #333539;
 }
 .light .themeSwitch:hover {
