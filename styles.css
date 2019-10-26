@@ -45,19 +45,49 @@ h1, #title {
     margin-right: 7.5%;
     height: 100vh;
     overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#overlay::-webkit-scrollbar {
+    display: none;
+    width: 0;
 }
 
 #content {
     color: #dcddde;
     padding: 3%;
     line-height: 175%;
-    font-size: 1em;
+    font-size: 1.2vw;
     overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+#content::-webkit-scrollbar {
+    display: none;
+    width: 0;
 }
 
 #check {
     cursor: pointer;
 }
+
+input[type="checkbox"] {
+    width: 0.8vw; 
+    height: 0.8vw;
+    cursor: pointer;
+    /* -webkit-appearance: none; */
+    margin: 5px;
+    /* margin-right: 5px; */
+    background-color: white;
+    /* border: 2px solid #8e9297; */
+    /* appearance: none; */
+}
+
+/* select {
+    width: 10vw;
+    /* color: #dcddde; 
+} */
 
 
 /* Tried making the checkbox look fancy, failed smh
@@ -182,21 +212,37 @@ input[type="checkbox"]:checked:after {
     background-color: #252629;
 }
 
-@media only screen and (max-width: 3600px) {
-    #content {
-        font-size: 300%;
+@media only screen and (max-width: 7680px) {
+    h1, #title {
+        font-size: 4vw;
     }
+    /* #content {
+        font-size: 300%;
+    } */
 }
 
-@media only screen and (max-width: 2400px) {
+@media only screen and (max-width: 3840px) {
+    h1, #title {
+        font-size: 5vw;
+    }
+    /* #content {
+        font-size: 300%;
+    } */
+}
+
+/* @media only screen and (max-width: 2560px) {
     #content {
         font-size: 200%;
     }
-}
+} */
 
 @media only screen and (max-width: 1440px) {
     #content {
         font-size: 100%;
+    }
+    input[type="checkbox"] {
+        width: 1vw; 
+        height: 1vw;
     }
 }
 
@@ -204,9 +250,12 @@ input[type="checkbox"]:checked:after {
     h1, #title {
         font-size: 6vw;
     }
-
     #content {
         font-size: 100%;
+    }
+    input[type="checkbox"] {
+        width: 1.8vw; 
+        height: 1.8vw;
     }
 }
 
@@ -214,10 +263,18 @@ input[type="checkbox"]:checked:after {
     h1, #title {
         font-size: 7.5vw;
     }
+    input[type="checkbox"] {
+        width: 3.6vw; 
+        height: 3.6vw;
+    }
 }
 
 @media only screen and (max-width: 350px) {
     h1, #title {
         font-size: 7vw;
+    }
+    input[type="checkbox"] {
+        width: 4vw; 
+        height: 4vw;
     }
 }
