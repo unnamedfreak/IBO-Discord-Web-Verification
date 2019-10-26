@@ -20,6 +20,11 @@ button, button:active, button:focus, button:active:focus, button:visited {
     float: right;
 }
 
+hr {
+    /* border: 2px solid #dcddde; */
+    border-color: #dcddde;
+}
+
 h1, #title {
     display: table;
     margin: auto;
@@ -150,7 +155,7 @@ input[type="checkbox"]:checked:after {
 }
 
 
-.light h1, .light #title, .light #content{
+.light h1, .light #title, .light #content {
     color: #2e3338;
 }
 .light a {
@@ -164,7 +169,7 @@ input[type="checkbox"]:checked:after {
     background-color: rgba(242, 243, 245, 0.85);
 }
 .light hr {
-    background-color: #7289da;
+    border-color: #7289da;
 }
 .light .themeSwitch {
     background-image: url("/IBO-Discord-Web-Verification/assets/sun.svg");
