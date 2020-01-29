@@ -47,7 +47,21 @@ $(document).ready(function() {
         } else {
             $('body').removeClass('light');
         }
-
     })
+
+    $('#acceptCookies').click((e) => {
+        e.preventDefault();
+        $('#cookieDialogue').hide();
+    })
+
+    $('li').hover(function() {
+            let currId = this.id.slice(4);
+            $(`#rule${currId} .ruleText`).css('display', 'block');
+            
+        }, function () {
+            let currId = this.id.slice(4);
+            $(`#rule${currId} .ruleText`).css('display', 'none');
+        }
+    );
 
 });
